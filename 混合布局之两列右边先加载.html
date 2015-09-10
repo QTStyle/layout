@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>混合布局之两列右边先加载</title>
+<style type="text/css">
+body{ margin:0; padding:0; font-size:30px; color:#fff}
+.top{height:100px; background:red;}
+.main{ height:600px; position: relative;}
+.left{width:200px; height:600px; float: left; background:blue; position: absolute; left: 0; top: 0;}
+.right{margin-left:200px; height:600px; background:green;}
+.foot{ height:100px; background:yellow;}
+</style>
+</head>
+<body>
+<div class="top">top</div>
+<div class="main">
+    <div class="right">right</div>
+    <div class="left">left</div>
+</div>
+<div class="foot">foot</div>
+</body>
+</html>
